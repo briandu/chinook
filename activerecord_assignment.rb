@@ -6,6 +6,10 @@
 
 # 1a) Find the genre with the name "Hip Hop/Rap".
 
+# Genre.where(name: 'Hip Hop/Rap')
+# [#<Genre id: 17, name: "Hip Hop/
+# Rap", created_at: "2013-01-20 02:04:31", updated_at: "2014-0
+# 1-29 22:14:08">]>
 
 
 # 1b) Count how many tracks belong to the "Hip Hop/Rap" genre
