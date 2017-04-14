@@ -37,7 +37,17 @@ SELECT COUNT(id) FROM tracks WHERE media_type_id=3;
 
 -- 3) Find the least expensive track that has the genre "Electronica/Dance".
 
+SELECT id FROM genres WHERE name='Electronica/Dance';
+ id
+----
+ 15
+(1 row)
 
+SELECT name, genre_id FROM tracks WHERE genre_id=15 ORDER BY unit_price ASC LIMIT 1
+name        | genre_id
+--------------------+----------
+Instinto Colectivo |       15
+(1 row)
 
 -- 4) Find the all the artists whose names start with A.
 
