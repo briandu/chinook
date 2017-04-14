@@ -23,7 +23,17 @@ SELECT * FROM albums WHERE artist_id=51;
 
 -- 2) [Count](http://www.w3schools.com/sql/sql_func_count.asp) how many tracks belong to the media type "Protected MPEG-4 video file".
 
+SELECT id FROM media_types WHERE name='Protected MPEG-4 video file';
+ id
+----
+  3
+(1 row)
 
+SELECT COUNT(id) FROM tracks WHERE media_type_id=3;
+ count
+-------
+   214
+(1 row)
 
 -- 3) Find the least expensive track that has the genre "Electronica/Dance".
 
