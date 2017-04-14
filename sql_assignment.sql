@@ -85,3 +85,10 @@ SELECT name FROM artists WHERE name LIKE 'A%';
 
 
 -- 5) Find all the tracks that belong to playlist 1.
+
+SELECT * FROM playlists LIMIT 1                                                                                                                                                       ;
+ id | name  |         created_at         |         updated_at
+----+-------+----------------------------+----------------------------
+  1 | Music | 2005-01-17 17:01:12.368268 | 2014-01-29 22:14:33.368743
+
+SELECT DISTINCT name, media_type_id FROM tracks WHERE media_type_id <> 3;
