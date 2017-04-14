@@ -49,8 +49,39 @@ name        | genre_id
 Instinto Colectivo |       15
 (1 row)
 
+
 -- 4) Find the all the artists whose names start with A.
 
+SELECT name FROM artists WHERE name LIKE 'A%';
+                                         name
+---------------------------------------------------------------------------------------
+ Aerosmith
+ Alice In Chains
+ Antônio Carlos Jobim
+ Apocalyptica
+ Azymuth
+ Aquaman
+ AC/DC
+ Alanis Morissette
+ Audioslave
+ Avril Lavigne
+ Aisha Duo
+ Aaron Goldberg
+ Academy of St. Martin in the Fields Chamber Ensemble & Sir Neville Marriner
+ Academy of St. Martin in the Fields, John Birch, Sir Neville Marriner & Sylvia McNair
+ Aaron Copland & London Symphony Orchestra
+ Antal Doráti & London Symphony Orchestra
+ Amy Winehouse
+ Adrian Leaper & Doreen de Feis
+ Accept
+ Aerosmith & Sierra Leones Refugee Allstars
+ Alberto Turco & Nova Schola Gregoriana
+ Anne-Sophie Mutter, Herbert Von Karajan & Wiener Philharmoniker
+ Academy of St. Martin in the Fields & Sir Neville Marriner
+ Academy of St. Martin in the Fields, Sir Neville Marriner & William Bennett
+ Academy of St. Martin in the Fields, Sir Neville Marriner & Thurston Dart
+ A Cor Do Som
+(26 rows)
 
 
 -- 5) Find all the tracks that belong to playlist 1.
