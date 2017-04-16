@@ -22,7 +22,10 @@
 
 # 2) Find the total amount of time required to listen to all the tracks in the database.
 
-
+# Track.sum(:milliseconds)
+#    (4.6ms)  SELECT SUM("tracks"."milliseconds") FROM "tracks
+# "
+# => 1378575827 milliseconds
 
 # 3a) Find the highest price of any track that has the media type "MPEG audio file".
 
