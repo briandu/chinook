@@ -14,6 +14,10 @@
 
 # 1b) Count how many tracks belong to the "Hip Hop/Rap" genre
 
+# Track.where(genre_id: 17).count
+#    (1.5ms)  SELECT COUNT(*) FROM "tracks" WHERE "tracks"."ge
+# nre_id" = $1  [["genre_id", 17]]
+# => 35
 
 
 # 2) Find the total amount of time required to listen to all the tracks in the database.
